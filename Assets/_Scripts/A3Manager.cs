@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class A3Manager : MonoBehaviour
 {
-    List<GameObject> list = new List<GameObject>(30000);
+    [SerializeField] private int itemsToCreate = 60000;
+
+    List<GameObject> list;
 
     private void Start()
     {
-        for (int i = 0; i < 30000; i++)
+        list = new List<GameObject>(itemsToCreate);
+
+        for (int i = 0; i < itemsToCreate; i++)
             list.Add(null);
     }
 
@@ -22,7 +26,7 @@ public class A3Manager : MonoBehaviour
                 Debug.Log("found a not NULL element");
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad1))
+        if (Input.GetKeyDown(KeyCode.Keypad2))
         {
             if (NullCheckWay2())
                 Debug.Log("all obj are NULL");
