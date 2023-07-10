@@ -57,8 +57,8 @@ public class B1Manager : MonoBehaviour
 
     private void SetLitMat(bool isActive)
     {
-            floors[0].SetActive(isActive);
-            floors[1].SetActive(!isActive);
+        floors[0].SetActive(isActive);
+        floors[1].SetActive(!isActive);
     }
 
 }
