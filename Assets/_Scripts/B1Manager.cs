@@ -24,17 +24,17 @@ public class B1Manager : MonoBehaviour
             SetLitMat(true);
             SpawnThings(movingObjPrefabs[0], lightPrefabs[0]);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad4))
+        if (Input.GetKeyDown(KeyCode.Keypad2))
         {
             SetLitMat(true);
             SpawnThings(movingObjPrefabs[0], lightPrefabs[1]);
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad2))
+        if (Input.GetKeyDown(KeyCode.Keypad3))
             foreach (GameObject obj in objects)
                 Destroy(obj);
 
-        if (Input.GetKeyDown(KeyCode.Keypad3))
+        if (Input.GetKeyDown(KeyCode.Keypad4))
         {
             SetLitMat(false);
             SpawnThings(movingObjPrefabs[1], lightPrefabs[1]);
